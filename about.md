@@ -7,7 +7,7 @@ permalink: /about/
 ## 关于我
 你好，我是Aries。
 
-一个爱折腾的大学生、爱折腾的小白[知乎](https://www.zhihu.com/people/aries-2-38)。
+一个爱折腾的大学生、小白，热衷于后端网络工作以及Linux，Android等。
 
 [Telegram](https://t.me/awwwwwwesome)是我的Telegram主页，欢迎骚扰...
 
