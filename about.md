@@ -9,7 +9,7 @@ permalink: /about/
 
 一个爱折腾的大学生、小白，热衷于后端网络工作以及Linux，Android等。
 
-[Telegram](https://t.me/awwwwwwesome)是我的Telegram主页，欢迎骚扰...
+这是我的[Telegram](https://t.me/awwwwwwesome)主页，欢迎骚扰...
 
 
 ## 版权声明
