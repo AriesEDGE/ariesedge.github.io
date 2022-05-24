@@ -66,8 +66,8 @@ disqus: # fromendworld
 gitalk:
   clientID: c441e6806d57e85455d0
   clientSecret: 78e32da29880e3d21db62b277c8c8914070df011
-  repo: https://github.com/ariesedge/ariesedge.github.io
-  owner: ariesedge
+  repo: ariesedge.github.io
+  owner: AriesEDGE
 
 # Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
 #google_analytics: 
