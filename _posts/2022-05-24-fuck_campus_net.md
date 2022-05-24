@@ -128,7 +128,7 @@ root用户下执行
 
 下载 [Softether Server](https://ghproxy.com/github.com/SoftEtherVPN/SoftEtherVPN_Stable/releases/download/v4.39-9772-beta/softether-vpnserver_vpnbridge-v4.39-9772-beta-2022.04.26-windows-x86_x64-intel.exe) ,点击可以直接下载
 
-安装server服务端
+安装server PC管理server端
 
 5.打开server端
 
@@ -136,12 +136,26 @@ root用户下执行
 
 首次进入会提示你输入server端的密码，正常输入即可。
 
+[server1](https://github.com/AriesEDGE/ariesedge.github.io/blob/master/images/20220524/server%E7%AB%AF%E8%AE%BE%E7%BD%AE1.png)
+
+[server2](https://github.com/AriesEDGE/ariesedge.github.io/blob/master/images/20220524/server%E7%AB%AF%E8%AE%BE%E7%BD%AE2.png)
+
 6.“**新建虚拟HUB**”-“**创建账户**，
 新建一个账户账号密码随便设置
 
-7.打开“**虚拟nat**”，在链接的时候DHCP分配会用到
+[HUB](https://github.com/AriesEDGE/ariesedge.github.io/blob/master/images/20220524/%E8%99%9A%E6%8B%9Fhub1.png)
+
+[ls](https://github.com/AriesEDGE/ariesedge.github.io/blob/master/images/20220524/%E6%96%B0%E5%A2%9E%E8%B4%A6%E6%88%B7.png)
+
+[ls2](https://github.com/AriesEDGE/ariesedge.github.io/blob/master/images/20220524/%E8%B4%A6%E6%88%B7%E8%AE%BE%E7%BD%AE.png)
+
+7.打开“**SecureNat**”，在链接的时候DHCP分配会用到
+
+[nat](https://github.com/AriesEDGE/ariesedge.github.io/blob/master/images/20220524/nat%E8%AE%BE%E7%BD%AE.png)
 
 8.打开右下角的openvpn设置，默认1194端口修改为53/67/68/69/80/443/8083/8081等可用端口
+
+[open](https://github.com/AriesEDGE/ariesedge.github.io/blob/master/images/20220524/openvpn%E8%AE%BE%E7%BD%AE%E5%BC%95%E5%AF%BC.png)
 
 **DNS(53)端口检测方法**
 
@@ -172,6 +186,8 @@ root用户下执行
 10.下载对应的[OPENVPN](https://openvpn.net) 
       
 并导入相关的配置文件
+
+[opens](https://github.com/AriesEDGE/ariesedge.github.io/blob/master/images/20220524/openvpn.png)
 
 **注意：你可能需要去ovpn文件中修改服务器名称，softether提供的域名可能被墙，可能需要你修改为你自己的域名/ip**
 
@@ -246,6 +262,8 @@ root用户下执行
 但是客户端由于协议支持软件少导致适用范围贼小，貌似PC端的V2rayNG支持了。至于Android客户端，官方给的SagerNet直接无法使用（万恶之源：miui）。
 
 看着潜力挺大的这个协议，后期再关注一下
+
+[Hy](https://github.com/AriesEDGE/ariesedge.github.io/blob/master/images/20220524/%E6%AD%87%E6%96%AF%E5%BA%95%E9%87%8C.jpg)
 
 
 
