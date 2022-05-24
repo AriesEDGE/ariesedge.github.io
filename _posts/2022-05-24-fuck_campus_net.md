@@ -76,7 +76,7 @@ Linux关闭防火墙
 
 `ufw disable`
 
-3.使用[WinSCP](https://winscp.net/eng/index.php)/[MobaXterm](https://mobaxterm.mobatek.net/download.html)/[Git](https://gitforwindows.org/)等工具进行ssh链接
+3.使用 [WinSCP](https://winscp.net/eng/index.php) / [MobaXterm](https://mobaxterm.mobatek.net/download.html) / [Git](https://gitforwindows.org/) 等工具进行ssh链接
     推荐使用**Git**，简简单单就是因为他的方便.
 
     `ssh -i 你的证书文件.pem 用户名@公网IP/你的绑定域名`
@@ -99,6 +99,7 @@ Linux关闭防火墙
 1.Softeher服务端搭建
 
 在ssh中执行
+
 `wget http://www.softether-download.com/files/softether/v4.31-9727-beta-2019.11.18-tree/Linux/SoftEther_VPN_Server/64bit_-_Intel_x64_or_AMD64/softether-vpnserver-v4.31-9727-beta-2019.11.18-linux-x64-64bit.tar.gz`
 
 `tar -zxvf softether-vpnserver-v4.31-9727-beta-2019.11.18-linux-x64-64bit.tar.gz`
@@ -125,7 +126,7 @@ root用户下执行
 
 4.打开你的**Windows本地电脑**
 
-下载[Softether Server](https://ghproxy.com/github.com/SoftEtherVPN/SoftEtherVPN_Stable/releases/download/v4.39-9772-beta/softether-vpnserver_vpnbridge-v4.39-9772-beta-2022.04.26-windows-x86_x64-intel.exe),点击可以直接下载
+下载 [Softether Server](https://ghproxy.com/github.com/SoftEtherVPN/SoftEtherVPN_Stable/releases/download/v4.39-9772-beta/softether-vpnserver_vpnbridge-v4.39-9772-beta-2022.04.26-windows-x86_x64-intel.exe) ,点击可以直接下载
 
 安装server服务端
 
@@ -168,7 +169,7 @@ root用户下执行
 
 [后面测试53端口单链接无效，我们的学校只能走53+8083udp端口，softether支持多重udp端口]
 
-10.下载对应的[openvpn]（https://openvpn.net）
+10.下载对应的 [openvpn]（https://openvpn.net）
       
 并导入相关的配置文件
 
