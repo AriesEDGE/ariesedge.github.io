@@ -66,7 +66,7 @@ disqus: # fromendworld
 gitalk:
   clientID: 1210649d72559cd5b9c8
   clientSecret: 4a230dc5714d8363bd4b5c6597b12afe5f93cee2
-  repo: https://www.elevate.cf
+  repo: https://ariesedge.github.io
   owner: ariesedge
 
 # Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
