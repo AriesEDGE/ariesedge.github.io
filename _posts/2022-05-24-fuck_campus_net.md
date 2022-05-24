@@ -227,6 +227,28 @@ root用户下执行
 
 ### gost端口转发
 
+方法来自网络，自己也尝试搭建了一下。[遨游者](https://aoyouer.com/posts/udp53-gost-surfing/#:~:text=%E9%A6%96%E5%85%88%E6%88%91%E4%BB%AC%E8%A6%81%E5%88%A4%E6%96%AD%E6%A0%A1%E5%9B%AD%E7%BD%91%E7%BD%91%E5%85%B3%E6%98%AF%E5%90%A6%E6%94%BE%E8%A1%8C%E7%9B%AE%E6%A0%87%E7%AB%AF%E5%8F%A3%E4%B8%BA53%E7%9A%84udp%E6%95%B0%E6%8D%AE%E5%8C%85%EF%BC%8C53%E7%AB%AF%E5%8F%A3%E7%9A%84udp%E6%95%B0%E6%8D%AE%E5%8C%85%E9%80%9A%E5%B8%B8%E7%94%A8%E6%9D%A5%E8%BF%9B%E8%A1%8Cdns%E8%A7%A3%E6%9E%90%EF%BC%8C%E6%89%80%E4%BB%A5%E6%88%91%E4%BB%AC%E5%8F%AF%E4%BB%A5%E8%BF%9E%E6%8E%A5%E6%A0%A1%E5%9B%AD%E7%BD%91%20%28%E4%B8%8D%E8%A6%81%E7%99%BB%E9%99%86%E8%AE%A4%E8%AF%81%29%2C%E7%84%B6%E5%90%8E%E5%9C%A8cmd%E4%B8%AD%E8%BE%93%E5%85%A5,nslookup%20baidu.com%20%E8%BF%99%E6%A0%B7%E7%9A%84%E5%91%BD%E4%BB%A4%E6%9D%A5%E5%B0%9D%E8%AF%95%E6%9F%A5%E8%AF%A2%E5%9F%9F%E5%90%8D%E3%80%82)
+
+这里也尝试搭建了一下，环境挺不好配置的。
+
+服务端的53号端口太容易被dns服务给占用了，还要花心思给他关了，推荐使用V2ray而不是socks。
+
+至于客户端，更难弄。需要设定gost客户端路径，给予全局变量。如果是socks代理还要搭配SStap，特别麻烦。。
+
+**并不推荐GOST这种方法**
+
+### Hysteria协议
+
+最近新推出的一个冷门代理协议，开源地址：[Hysteria](https://www.toby.moe/hysteria);
+
+服务端容易搭建，同V2ray搭建方法。
+
+但是客户端由于协议支持软件少导致适用范围贼小，貌似PC端的V2rayNG支持了。至于Android客户端，官方给的SagerNet直接无法使用（万恶之源：miui）。
+
+看着潜力挺大的这个协议，后期再关注一下
+
+
+
 
 
 
