@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "浅谈校园网转发"
+title: "浅谈校园网端口转发"
 date:   2022-05-24
-tags: [Network][UDP]
+tags: [network]
 comments: true
-author: Aries
+author: aries
 ---
 
     最近校园网的web认证天天崩溃，加之校园网的不合理的价格捆绑以及强制绑定一张不常用的手机卡，让我有了绕web认证的想法。注意，这是以学习目的为主，而且学校的垄断行为我们也无能为力。
