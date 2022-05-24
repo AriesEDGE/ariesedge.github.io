@@ -1,10 +1,10 @@
 ---
-layout :post 
-title :"浅谈校园网绕认证UDP转发方法" 
-date :2022-05-24 
-tags :[校园网][网络][端口转发]
-comments :true
-author :Aries
+layout: post 
+title: "浅谈校园网绕认证UDP转发方法" 
+date: 2022-05-24 
+tags: [校园网][网络][端口转发]
+comments: true
+author: Aries
 ---
 
     最近校园网的web认证天天崩溃，加之校园网的不合理的价格捆绑以及强制绑定一张不常用的手机卡，让我有了绕web认证的想法。注意，这是以学习目的为主，而且学校的垄断行为我们也无能为力。
