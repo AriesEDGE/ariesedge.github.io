@@ -73,6 +73,7 @@ author: aries
 Linux关闭防火墙
 
 `sudo -i`
+
 `ufw disable`
 
 3.使用[WinSCP](https://winscp.net/eng/index.php)/[MobaXterm](https://mobaxterm.mobatek.net/download.html)/[Git](https://gitforwindows.org/)等工具进行ssh链接
@@ -84,7 +85,9 @@ Linux关闭防火墙
 
     Ubuntu系统 更新系统配置
     `sudo -i`
+    
     `apt-get update`
+    
     `apt-get upgrade`
 
 至此，你的服务器环境基本以及搭建完了。
@@ -97,8 +100,11 @@ Linux关闭防火墙
 
 在ssh中执行
 `wget http://www.softether-download.com/files/softether/v4.31-9727-beta-2019.11.18-tree/Linux/SoftEther_VPN_Server/64bit_-_Intel_x64_or_AMD64/softether-vpnserver-v4.31-9727-beta-2019.11.18-linux-x64-64bit.tar.gz`
+
 `tar -zxvf softether-vpnserver-v4.31-9727-beta-2019.11.18-linux-x64-64bit.tar.gz`
+
 `cd vpnserver`
+
 `sudo -i`
 
 
@@ -214,7 +220,7 @@ root用户下执行
 
 正常安装即可
 
-详情加申请https证书请见[积木别倒]（https://jimubiedao.com/1166）
+详情加申请https证书请见 [积木别倒]（https://jimubiedao.com/1166）
 
 ### gost端口转发
 
