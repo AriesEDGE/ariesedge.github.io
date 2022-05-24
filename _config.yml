@@ -66,7 +66,7 @@ disqus: # fromendworld
 gitalk:
   clientID: f4b559f1c1f7afff15be
   clientSecret: bc3df6b80142c279d8c3e0a134152b89fd666046
-  repo: www.elevate.cf
+  repo: ariesedge.github.io
   owner: AriesEDGE
 
 # Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
@@ -75,7 +75,7 @@ gitalk:
 # Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
 # Used for Sitemap.xml and your RSS feed
 
-url: https://www.elevate.cf
+url: ariesedge.github.io
 
 # If you're hosting your site at a Project repository on GitHub pages
 # (http://yourusername.github.io/repository-name)
