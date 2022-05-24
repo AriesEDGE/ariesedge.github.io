@@ -136,26 +136,23 @@ root用户下执行
 
 首次进入会提示你输入server端的密码，正常输入即可。
 
- ![server1](https://raw.githubusercontent.com/AriesEDGE/ariesedge.github.io/blob/master/images/20220524/server%E7%AB%AF%E8%AE%BE%E7%BD%AE1.png)
+ ![server1](https://s2.loli.net/2022/05/24/zCIoryNmt9QGfex.png)
 
- ![server2](https://raw.githubusercontent.com/AriesEDGE/ariesedge.github.io/blob/master/images/20220524/server%E7%AB%AF%E8%AE%BE%E7%BD%AE2.png)
+ ![server2](https://s2.loli.net/2022/05/24/It6nTCGAOc3sL1g.png)
 
 6.“**新建虚拟HUB**”-“**创建账户**，
-新建一个账户账号密码随便设置
+新建一个账户账号密码随便设置，添加账户
 
- ![HUB](https://raw.githubusercontent.com/AriesEDGE/ariesedge.github.io/blob/master/images/20220524/%E8%99%9A%E6%8B%9Fhub1.png)
+ ![HUB](https://s2.loli.net/2022/05/24/rxczvkdq2GijSZp.png)
 
- ![ls](https://raw.githubusercontent.com/AriesEDGE/ariesedge.github.io/blob/master/images/20220524/%E6%96%B0%E5%A2%9E%E8%B4%A6%E6%88%B7.png)
-
- ![ls2](https://raw.githubusercontent.com/AriesEDGE/ariesedge.github.io/blob/master/images/20220524/%E8%B4%A6%E6%88%B7%E8%AE%BE%E7%BD%AE.png)
 
 7.打开“**SecureNat**”，在链接的时候DHCP分配会用到
 
- ![nat](https://raw.githubusercontent.com/AriesEDGE/ariesedge.github.io/blob/master/images/20220524/nat%E8%AE%BE%E7%BD%AE.png)
+ ![nat](https://s2.loli.net/2022/05/24/QFDqVdW75RflhaG.png)
 
 8.打开右下角的openvpn设置，默认1194端口修改为53/67/68/69/80/443/8083/8081等可用端口
 
- ![open](https://raw.githubusercontent.com/AriesEDGE/ariesedge.github.io/blob/master/images/20220524/openvpn%E8%AE%BE%E7%BD%AE%E5%BC%95%E5%AF%BC.png)
+ ![open](https://s2.loli.net/2022/05/24/zCIoryNmt9QGfex.png)
 
 **DNS(53)端口检测方法**
 
@@ -187,7 +184,7 @@ root用户下执行
       
 并导入相关的配置文件
 
- ![opens](https://raw.githubusercontent.com/AriesEDGE/ariesedge.github.io/blob/master/images/20220524/openvpn.png)
+ ![opens](https://s2.loli.net/2022/05/24/oY6VGSxkRrvy3UW.png)
 
 **注意：你可能需要去ovpn文件中修改服务器名称，softether提供的域名可能被墙，可能需要你修改为你自己的域名/ip**
 
@@ -263,7 +260,7 @@ root用户下执行
 
 看着潜力挺大的这个协议，后期再关注一下
 
- ![Hy](https://raw.githubusercontent.com/AriesEDGE/ariesedge.github.io/blob/master/images/20220524/%E6%AD%87%E6%96%AF%E5%BA%95%E9%87%8C.jpg)
+ ![Hy](https://s2.loli.net/2022/05/24/mZu6pSQDwaCEyPF.jpg)
 
 
 
