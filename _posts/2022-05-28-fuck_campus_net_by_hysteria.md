@@ -7,8 +7,9 @@ comments: true
 author: aries
 ---
 
-对于UDP端口绕验证，尝试了一下Hysteria协议，不得不说这个协议确实很强，低延迟高速率。
-但是，在他快速低延迟的情况下，也有他的不足。
+  对于UDP端口绕验证，尝试了一下Hysteria协议，不得不说这个协议确实很强，低延迟高速率。
+  但是，在他快速低延迟的情况下，也有他的不足。
+  注意本博客仅用于学习目的，请勿用于非法用途，谢谢！
 
 <!-- more -->
 
@@ -102,35 +103,53 @@ Github下载加速:将 github.com 换成 git.imaries.cf ,自己用CloudFlare Wor
 
 官方给的SagerNet的方法实在是太垃圾，对于Hysteria协议跟没有一样
 
-基于Android也是Linux的心态，我打算试一下使用Linux的方法执行核心，这里我在官网下载的是ARM64版本(现在手机处理器一般都是arm-v8a或者v9，吐槽一句，今年ARM v9架构真的翻车)
+晚上也是突发奇想，Android不是也是Linux系统吗？
 
-最初只写了一个shell脚本，发现无法给777权限，所以将他移到了data目录，采用了官网wiki给的命令
+为什么我不用Linux的心态看Android呢？
+
+基于Android也是Linux的心态，我打算试一下使用Linux的方法执行核心，这里我在官网下载的是ARM64版本(现在手机处理器一般都是arm-v8a或者v9.）
+
+--顺便吐槽一句，今年ARM v9架构真的垃圾..我的Redmin K50Pro深受其害..--
+
+刚开始的时候只写了一个shell脚本，执行后出现"Pessmion Denied"，权限不足，已经见怪不怪了..
+
+这个时候发现无法给777权限，由于在Android 11后在用户sdcard目录下无法给予777权限
+
+所以将他移到了data目录，并且采用了官网wiki给的命令.
 
 /data/aries下有hysteria核心，json配置文件，执行sh脚本
 
 `./hysteria -c hysteria.json client`
 
-此时执行成功了，那么我们还要想办法监听本地127.0.0.1的端口
+(提供的脚本执行成功了是不会自动退出的).
+
+此时执行成功了，那么我们还要想办法监听本地127.0.0.1的端口.
 
  ![shell.jpg](https://s2.loli.net/2022/05/29/S4bwcBfqRHdGnhN.jpg)
 
-开始我想到了V2RAY,SOCKPROXY，但是无一例外都失败了
+开始我想到了V2RAY,SOCKPROXY，但是无一例外都失败了.
 
-然后我修改了wifi代理设置，修改为127.0.0.1跟端口，突然给我了个惊喜，可以直接连同！
+于是我想到了Android自带的WiFi代理并且修改了wifi代理设置，修改为127.0.0.1跟端口，突然给我了个惊喜，可以直接连！
 
-但是微信QQ这些走私端的毒瘤软件就没办法。。
+打开edge，bing可以打得开.蛮不错
+
+可是当我打开微信QQ这些走私端的毒瘤软件，害，毒瘤还得是毒瘤。。
 
  ![WIFI代理.jpg](https://s2.loli.net/2022/05/29/gASh1TnIsQb672X.jpg)
 
-开始Google，发现一个走root的全局代理的 **ProxyDroid** ，这个软件可以走socks也可以走http
+这个时候我只能把思路又转回软件代理。
 
-抱着试试的心态，啊哈直接成功了
+开始Google，发现一个走root的全局代理的 **ProxyDroid** ，这个软件可以走socks也可以走http.
+
+(拒绝垃圾国内软件从我做起.点名批评某号称全球最大的中文搜索引擎..)
+
+抱着试试的心态，啊哈，直接成功了.有一点点小激动，哈哈.
 
  ![proxy.png](https://s2.loli.net/2022/05/29/nROMlJ1f3sko7LQ.png)
 
 此时已经成功了，但是我还是觉得麻烦.
 
-所以后续打算打包成magisk模块让他开机就自动运行shell脚本，并且想用iptables代替软件(还在学)，实现真shell翻墙，顺便加一个自动发送LOG的TG BOT. /doge
+所以后续打算打包成magisk模块让他开机就自动运行shell脚本，并且想用iptables代替软件的代理功能(还在学)，实现真shell实现功能，顺便加一个自动发送LOG的TG BOT.(马上就会更新) /doge
 
 未完待续
 
