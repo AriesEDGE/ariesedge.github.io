@@ -44,7 +44,7 @@ Hysteria 歇斯底里 是一个功能丰富的，专为恶劣网络环境进行�
 
 使用SSH连接到你的VPS.
 
-这里我是采用的 [小御坂的破站](https://owo.misaka.rest/Hysteria-script/) 提供的一键搭建脚本，这个更容易上手与配置。
+这里我是采用的 [小御坂的破站] (https://owo.misaka.rest/Hysteria-script/) 提供的一键搭建脚本，这个更容易上手与配置。
 
 当然，也有其他一键搭建脚本，更详细 [Git上的脚本](https://git.io/hysteria.sh).
 
@@ -97,6 +97,8 @@ Github下载加速:将 github.com 换成 git.imaries.cf ,自己用CloudFlare Wor
 2.基于LINUX **root** 的新方法,效果比较好.
 
 **手机需要root**
+
+[工具+环境配置](https://smyisaries.lanzoum.com/iCC9105kzckd)
 
 官方给的SagerNet的方法实在是太垃圾，对于Hysteria协议跟没有一样
 
