@@ -1,14 +1,13 @@
 ---
 layout: post
 title: "浅谈基于Hysteria协议的校园网端口转发"
-date:   2022-05-28
+date:   2022-05-24
 tags: [network]
 comments: true
 author: aries
 ---
 
 对于UDP端口绕验证，尝试了一下Hysteria协议，不得不说这个协议确实很强，低延迟高速率。
-
 但是，在他快速低延迟的情况下，也有他的不足。
 
 <!-- more -->
@@ -87,13 +86,51 @@ Github下载加速:将 github.com 换成 git.imaries.cf ,自己用CloudFlare Wor
 
 ### Android端
 
-使用 **SagerNet** 导入Hysteria协议即可，注意可能要下载额外的Hysteria Plugin插件(请到Google Play下载).
+1.使用 **SagerNet** 导入Hysteria协议即可，注意可能要下载额外的Hysteria Plugin插件(请到Google Play下载).
 
 **注意：国产ui需要将Hysteria Plugin自启动打开**
 
 **注意：国产ui需要将Hysteria Plugin自启动打开**
 
 **注意：国产ui需要将Hysteria Plugin自启动打开**
+
+2.基于LINUX **root** 的新方法,效果比较好.
+
+**手机需要root**
+
+官方给的SagerNet的方法实在是太垃圾，对于Hysteria协议跟没有一样
+
+基于Android也是Linux的心态，我打算试一下使用Linux的方法执行核心，这里我在官网下载的是ARM64版本(现在手机处理器一般都是arm-v8a或者v9，吐槽一句，今年ARM v9架构真的翻车)
+
+最初只写了一个shell脚本，发现无法给777权限，所以将他移到了data目录，采用了官网wiki给的命令
+
+/data/aries下有hysteria核心，json配置文件，执行sh脚本
+
+`./hysteria -c hysteria.json client`
+
+此时执行成功了，那么我们还要想办法监听本地127.0.0.1的端口
+
+ ![shell.jpg](https://s2.loli.net/2022/05/29/S4bwcBfqRHdGnhN.jpg)
+
+开始我想到了V2RAY,SOCKPROXY，但是无一例外都失败了
+
+然后我修改了wifi代理设置，修改为127.0.0.1跟端口，突然给我了个惊喜，可以直接连同！
+
+但是微信QQ这些走私端的毒瘤软件就没办法。。
+
+ ![WIFI代理.jpg](https://s2.loli.net/2022/05/29/gASh1TnIsQb672X.jpg)
+
+开始Google，发现一个走root的全局代理的 **ProxyDroid** ，这个软件可以走socks也可以走http
+
+抱着试试的心态，啊哈直接成功了
+
+ ![proxy.png](https://s2.loli.net/2022/05/29/nROMlJ1f3sko7LQ.png)
+
+此时已经成功了，但是我还是觉得麻烦.
+
+所以后续打算打包成magisk模块让他开机就自动运行shell脚本，并且想用iptables代替软件(还在学)，实现真shell翻墙，顺便加一个自动发送LOG的TG BOT. /doge
+
+未完待续
 
 ### Windows端
 
@@ -113,7 +150,7 @@ Github下载加速:将 github.com 换成 git.imaries.cf ,自己用CloudFlare Wor
 
 **Hysteria Core设置**
 
-新建一个文件夹，将Hysteria Core和你编写的json文件(假设你的json文件叫做 hy.json)一起拖入该文件夹。
+新建一个文件夹，将Hysteria Core和你编写的json文件(假设你的json文件叫做 hysteria.json)一起拖入该文件夹。
 
 执行以下命令
 
