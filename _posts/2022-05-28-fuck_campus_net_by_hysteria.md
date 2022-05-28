@@ -113,7 +113,7 @@ Github下载加速:将 github.com 换成 git.imaries.cf ,自己用CloudFlare Wor
 
 **Hysteria Core设置**
 
-新建一个文件夹，将Hysteria Core和你编写的json文件(假设你的json文件叫做 hysteria.json)一起拖入该文件夹。
+新建一个文件夹，将Hysteria Core和你编写的json文件(假设你的json文件叫做 hy.json)一起拖入该文件夹。
 
 执行以下命令
 
