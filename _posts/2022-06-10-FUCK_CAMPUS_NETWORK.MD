@@ -198,7 +198,10 @@ Linux关闭防火墙(方便后面部署)
 至于关闭53端口进程占用，请使用Google搜索.
 
 
+
 ![kali](https://s2.loli.net/2022/05/26/B2ijSFUlbguQA8H.jpg)
+
+
 
 
 
