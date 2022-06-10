@@ -117,17 +117,16 @@ author: Aries
 
 **注意**
 
-    建议在Linux系统中**禁用系统防火墙**
-    使用服务器管理端的**安全策略**
+    建议在Linux系统中 **禁用系统防火墙**
+    使用服务器管理端的 **安全策略**
 
 
 
 Linux关闭防火墙(方便后面部署)
 
-`sudo -i`
-
 `ufw disable`
 
+(ROOT下执行)
 
 
 3.使用 [WinSCP](https://winscp.net/eng/index.php) / [MobaXterm](https://mobaxterm.mobatek.net/download.html) / [Git](https://gitforwindows.org/) 等工具进行ssh链接
